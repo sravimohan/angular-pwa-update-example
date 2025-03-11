@@ -10,8 +10,8 @@ export class CheckForUpdateService {
         // polling for updates with `interval()`.
         const appIsStable$ = appRef.isStable.pipe(first((isStable) => isStable === true));
         const everySixSeconds$ = interval(6 * 1000);
-        const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everySixSeconds$);
-        everySixHoursOnceAppIsStable$.subscribe(async () => {
+        const everySixSecondsOnceAppIsStable$ = concat(appIsStable$, everySixSeconds$);
+        everySixSecondsOnceAppIsStable$.subscribe(async () => {
             try {
                 const updateFound = await updates.checkForUpdate();
                 console.log(updateFound ? 'A new version is available.' : 'Already on the latest version.');

@@ -16,9 +16,5 @@ export class AppComponent {
   checkForUpdateService = inject(CheckForUpdateService);
   promptUpdateService = inject(PromptUpdateService);
 
-  title = 'pwa 7';
-
-  constructor() {
-    console.info('AppComponent.constructor()');
-  }
+  title = 'pwa 1';
 }
