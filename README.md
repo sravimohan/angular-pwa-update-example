@@ -8,6 +8,9 @@ To learn about how to set up a new project as a PWA,
 Checkout out, Getting started with service workers,
 <https://angular.dev/ecosystem/service-workers/getting-started>
 
+What is covered in this example, is how you can interact with the service worker and control the caching of your application.
+<https://angular.dev/ecosystem/service-workers/communications>
+
 ## Get Started with this example
 
 ```bash
